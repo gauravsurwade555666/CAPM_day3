@@ -1,0 +1,35 @@
+### Get call
+GET http://localhost:4004/odata/v4/my_path/Books
+
+### Get call for single
+GET http://localhost:4004/odata/v4/my_path/Books/10
+
+### Post Call
+POST http://localhost:4004/odata/v4/my_path/Books
+Content-Type: application/json
+
+{
+"ID": 50,
+  "title": "Sona",
+  "stock": 60,
+  "price": 80  
+}
+
+### Put call
+PUT http://localhost:4004/odata/v4/my_path/Books/50
+Content-Type: application/json
+
+{
+  "title": "Jian",
+  "tags": "anger bull"
+}
+
+### Patch call
+PATCH http://localhost:4004/odata/v4/my_path/Books/7
+Content-Type: application/json
+
+{
+        "title": "Suzuki Himawari"
+ 
+}
+
